@@ -7,11 +7,14 @@
   --logo-white-color: #ffffff;
   --logo-blue-color: #2196f3;
   --accent-color: #2196f3;
-  --background-headfooter-color: #2f303a;
+  --accent-white-color: #ffffff;
+  --background-footer-color: #2f303a;
   --link-color: #757575;
+  --hero-background: #2f303a;
+  --team-background: #f5f4fa;
 }
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #757575;
 }
 .list {
@@ -20,9 +23,22 @@ body {
 .link {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/*------HEADER-----*/
 .header-logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -46,8 +62,161 @@ body {
   letter-spacing: 0.02em;
   color: var(--link-color);
 }
-
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-white-color);
+  background-color: var(--accent-color);
+}
+/*-------HERO-------*/
+.hero {
+  background: var(--hero-background);
+}
+.hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-white-color);
+}
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--accent-white-color);
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/*-----ABOUT-----*/
+.about-item {
+}
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--small-title-color);
+}
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/*-----PROJECTS----*/
+.projects-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--small-title-color);
+}
+/*------TEAM-------*/
+.team {
+  background-color: var(--team-background);
+}
+.team-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--small-title-color);
+}
+.team-member {
+  background-color: var(--accent-white-color);
+}
+.team-member-name {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--small-title-color);
+}
+.team-member-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*------FOOTER------*/
+.footer {
+  background-color: var(--background-footer-color);
+}
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--logo-white-color);
+  text-decoration: none;
+}
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-white-color);
+}
+.footer-contact {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71x;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/*------PORTFOLIO-NAVIGATION-------*/
+.portfolio-btn {
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--buttons-text-color);
+}
+/*-----PORTFOLIO-EXAMPLES----*/
+.examples-header {
+  font-family: inherit;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--small-title-color);
+}
+.examples-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
